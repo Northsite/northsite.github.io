@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="canonical" href="https://northsite.ca/">
+<meta property="og:title" content="Northsite — websites for GTA trade contractors">
+<meta property="og:description" content="Websites that get contractors found — on Google and in AI answers. Free homepage before you pay.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Northsite","url":"https://northsite.ca/","email":"northsite.ca@gmail.com","description":"Websites and AI-search visibility for trade contractors in the Greater Toronto Area.","areaServed":{"@type":"AdministrativeArea","name":"Greater Toronto Area"},"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"priceRange":"$650–$4,900"}</script>
+<title>Northsite</title>
+<meta name="description" content="Websites that get GTA trade contractors found — on Google and in AI answers.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --bg:#F7F5F0; --bg2:#EEEAE1; --ink:#14202E; --ink2:#4A5668; --mute:#7C8798;
+  --navy:#0B1F3A; --navy2:#142D52; --on-navy:#F7F5F0; --on-navy2:#B7C3D6;
+  --accent:#FF6A13; --accent-ink:#1A0B00; --line:#D9D3C6; --pass:#1F8A4C; --fail:#C8321E;
+  --card:#FFFFFF;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0E1622; --bg2:#152033; --ink:#EEF1F5; --ink2:#B7C3D6; --mute:#8593A8;
+    --navy:#0A1830; --navy2:#122644; --line:#2A3A54; --card:#152033; --pass:#3DBB72; --fail:#F0644E;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0E1622; --bg2:#152033; --ink:#EEF1F5; --ink2:#B7C3D6; --mute:#8593A8;
+  --navy:#0A1830; --navy2:#122644; --line:#2A3A54; --card:#152033; --pass:#3DBB72; --fail:#F0644E;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;text-wrap:balance;margin:0;line-height:1.02;letter-spacing:-.005em}
+h1{font-size:clamp(44px,7vw,84px);font-weight:800;text-transform:uppercase}
+h2{font-size:clamp(34px,4.5vw,54px);font-weight:700;text-transform:uppercase}
+h3{font-size:24px;font-weight:700}
+p{margin:0}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;padding:15px 22px;border-radius:4px;font-size:16px;border:0;cursor:pointer}
+.btn:hover{filter:brightness(1.06)} .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
+nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+.logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px}
+.logo i{display:inline-block;width:14px;height:14px;background:var(--accent);clip-path:polygon(50% 0,100% 100%,0 100%)}
+nav .links{display:flex;gap:26px;font-size:15px;font-weight:500}
+nav .links a{text-decoration:none;color:var(--ink2)} nav .links a:hover{color:var(--ink)}
+@media(max-width:700px){nav .links{display:none}}
+.hero{padding:56px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px}}
+.hero .lede{font-size:20px;color:var(--ink2);max-width:34em;margin-top:22px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;align-items:center}
+.hero .fine{font-size:14px;color:var(--mute);margin-top:14px}
+.hl{background:linear-gradient(transparent 62%,var(--accent) 62%,var(--accent) 92%,transparent 92%);padding:0 .06em}
+.report{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 20px 50px -30px rgba(11,31,58,.35);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.5px;overflow:hidden}
+.report header{background:var(--navy);color:var(--on-navy);padding:14px 18px;display:flex;justify-content:space-between;align-items:center}
+.report header b{font-family:"Barlow Condensed",sans-serif;font-size:18px;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
+.report header span{color:var(--on-navy2);font-size:12px}
+.report .q{padding:16px 18px;border-bottom:1px solid var(--line);color:var(--ink2)}
+.report .q em{font-style:normal;color:var(--ink)}
+.report table{width:100%;border-collapse:collapse}
+.report td{padding:11px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+.report td:first-child{width:38px;color:var(--mute)}
+.report td:last-child{text-align:right;white-space:nowrap;font-weight:500}
+.report tr:last-child td{border-bottom:0}
+.tag{display:inline-block;padding:2px 8px;border-radius:3px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.tag.pass{background:color-mix(in srgb,var(--pass) 14%,transparent);color:var(--pass)}
+.tag.fail{background:color-mix(in srgb,var(--fail) 14%,transparent);color:var(--fail)}
+.report .you{background:color-mix(in srgb,var(--fail) 7%,transparent)}
+.report footer{padding:14px 18px;font-size:12.5px;color:var(--mute);border-top:1px dashed var(--line)}
+.band{background:var(--navy);color:var(--on-navy);padding:64px 0}
+.band .eyebrow{color:var(--on-navy2)}
+.band p{color:var(--on-navy2)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+@media(max-width:700px){.stats{grid-template-columns:1fr}}
+.stat b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:56px;font-weight:800;line-height:1;color:var(--on-navy);font-variant-numeric:tabular-nums}
+.stat span{display:block;margin-top:8px;font-size:15px;color:var(--on-navy2);max-width:22em}
+section{padding:72px 0}
+.sec-head{max-width:40em;margin-bottom:40px}
+.sec-head p{margin-top:14px;color:var(--ink2);font-size:18px}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+@media(max-width:860px){.offers{grid-template-columns:1fr}}
+.offer{background:var(--card);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:14px;border-radius:6px}
+.offer.lead{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
+.offer .price{font-family:"Barlow Condensed",sans-serif;font-size:44px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
+.offer .price small{font-family:"IBM Plex Sans",sans-serif;font-size:14px;font-weight:500;color:var(--mute);margin-left:6px}
+.offer ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--ink2);font-size:15.5px}
+.offer li{padding-left:20px;position:relative}
+.offer li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;background:var(--accent);clip-path:polygon(50% 0,100% 100%,0 100%)}
+.offer .btn{margin-top:auto;justify-content:center}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--ink)}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+.step{padding:22px 18px 22px 0;border-right:1px solid var(--line)}
+.step:last-child{border-right:0}
+@media(max-width:860px){.step{border-right:0;border-bottom:1px solid var(--line);padding-right:0}}
+.step .day{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:800;color:var(--accent);line-height:1}
+.step h3{font-size:20px;margin-top:8px}
+.step p{margin-top:8px;color:var(--ink2);font-size:15px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
+@media(max-width:760px){.faq{grid-template-columns:1fr}}
+.faq h3{font-size:22px;margin-bottom:8px}
+.faq p{color:var(--ink2);font-size:16px}
+.contact{background:var(--bg2);border-radius:8px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
+@media(max-width:760px){.contact{grid-template-columns:1fr;padding:28px}}
+.contact .big{font-family:"Barlow Condensed",sans-serif;font-size:clamp(30px,4vw,44px);font-weight:700;text-transform:uppercase;line-height:1.05}
+.contact p{margin-top:12px;color:var(--ink2)}
+.contact .box{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:6px;font-size:15px}
+.contact .box a{display:block;font-weight:600;text-decoration:none;font-size:18px;margin-top:6px}
+.contact .box .k{color:var(--mute);font-size:13px;text-transform:uppercase;letter-spacing:.1em;font-family:"IBM Plex Mono",monospace}
+footer.site{padding:36px 0 48px;color:var(--mute);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){
+  .report tr.you td{animation:flash 2.4s ease-in-out 1s 2}
+  @keyframes flash{50%{background:color-mix(in srgb,var(--fail) 18%,transparent)}}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav>
+    <a class="logo" href="#top"><i></i>Northsite</a>
+    <div class="links">
+      <a href="#check">The check</a><a href="#offers">Pricing</a><a href="#how">How it works</a><a href="#faq">Questions</a><a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <div class="hero" id="top">
+    <div>
+      <div class="eyebrow">Websites for GTA trade contractors</div>
+      <h1 style="margin-top:14px">Someone in your area just asked ChatGPT for a <span class="hl">plumber.</span><br>Were you the answer?</h1>
+      <p class="lede">Homeowners now ask Google, ChatGPT and Siri who to call. Those answers come from your website — or from your competitor's. Northsite builds fast, plain-spoken sites for HVAC, plumbing, electrical and roofing companies, and makes sure the machines can read them.</p>
+      <div class="cta">
+        <a class="btn" href="#contact">Get your free homepage — built before you pay</a>
+        <a class="btn ghost" href="#offers">See pricing</a>
+      </div>
+      <p class="fine">We build your new homepage first, for free, and send you the link. If you like it, we finish the site. If you don't, you owe nothing.</p>
+    </div>
+    <div class="report" id="check" aria-label="Example AI visibility check">
+      <header><b>AI visibility check</b><span>Etobicoke · HVAC · sample</span></header>
+      <div class="q">Asked ChatGPT: <em>"Who's a good furnace repair company near Etobicoke?"</em></div>
+      <table>
+        <tr><td>1</td><td>Competitor A — Mississauga</td><td><span class="tag pass">named</span></td></tr>
+        <tr><td>2</td><td>Competitor B — Etobicoke</td><td><span class="tag pass">named</span></td></tr>
+        <tr><td>3</td><td>Competitor C — Toronto West</td><td><span class="tag pass">named</span></td></tr>
+        <tr class="you"><td>—</td><td><strong>Your company</strong> · 4.8★ · 22 yrs in business</td><td><span class="tag fail">not found</span></td></tr>
+      </table>
+      <footer>Cause: no crawlable service pages, no structured business data, hours &amp; service area missing. Fixable in 5 days.</footer>
+    </div>
+  </div>
+</div>
+<div class="band">
+  <div class="wrap">
+    <div class="eyebrow">Why this matters now</div>
+    <h2 style="margin-top:12px;max-width:16em">The phone book moved into the AI. Most contractor websites weren't built for it.</h2>
+    <div class="stats">
+      <div class="stat"><b>5 days</b><span>from deposit to live site. Not five weeks of "revisions."</span></div>
+      <div class="stat"><b>$0</b><span>until you've seen your new homepage with your own eyes.</span></div>
+      <div class="stat"><b>1 job</b><span>is usually what it takes to pay the whole site off.</span></div>
+    </div>
+  </div>
+</div>
+<section id="offers">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">Pricing · CAD · no surprises</div>
+      <h2 style="margin-top:12px">Three ways to hire us</h2>
+      <p>Flat prices. Written down. Same for everyone.</p>
+    </div>
+    <div class="offers">
+      <div class="offer">
+        <div><div class="eyebrow">Rescue</div><h3 style="margin-top:6px">Fix what's broken</h3></div>
+        <div class="price">$650</div>
+        <ul>
+          <li>Broken, hacked, or painfully slow WordPress site repaired this week</li>
+          <li>Speed pass: Core Web Vitals in the green</li>
+          <li>Backups, updates, and a plain-English report of what was wrong</li>
+        </ul>
+        <a class="btn ghost" href="#contact">Book a rescue</a>
+      </div>
+      <div class="offer lead">
+        <div><div class="eyebrow">Launch site · most contractors</div><h3 style="margin-top:6px">A site that gets you found</h3></div>
+        <div class="price">$2,450<small>one-time</small></div>
+        <ul>
+          <li>5 pages: Home, Services, Service Area, About, Contact</li>
+          <li>Built for phones first — that's where 80% of your calls start</li>
+          <li>Google Business Profile tuned to match the site</li>
+          <li>AI-answer ready: structured data, service pages, hours, area</li>
+          <li>Click-to-call, quote form, reviews pulled in</li>
+          <li>Live in 5 business days</li>
+        </ul>
+        <a class="btn" href="#contact">Start with a free homepage</a>
+      </div>
+      <div class="offer">
+        <div><div class="eyebrow">Growth site</div><h3 style="margin-top:6px">Own your service area</h3></div>
+        <div class="price">$4,900<small>one-time</small></div>
+        <ul>
+          <li>Everything in Launch, plus online booking</li>
+          <li>Pages for each city you serve (Vaughan, Brampton, Oakville…)</li>
+          <li>3 months of monthly service articles the AIs cite</li>
+          <li>Reviews widget and before/after gallery</li>
+        </ul>
+        <a class="btn ghost" href="#contact">Talk about Growth</a>
+      </div>
+    </div>
+    <p style="margin-top:22px;color:var(--ink2);font-size:15.5px;max-width:52em">Every site includes a <strong>Care Plan</strong> at <strong>$149/month</strong> (Growth: $249): hosting, security, unlimited small edits, and a monthly report showing whether Google and the AIs are naming you. Cancel any month. Your site is yours either way.</p>
+  </div>
+</section>
+<section id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">How it works</div>
+      <h2 style="margin-top:12px">Five business days. Here's the schedule.</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="day">Day 0</div><h3>Free homepage</h3><p>We build your new homepage from your public info and send you a link. No call, no deposit.</p></div>
+      <div class="step"><div class="day">Day 1</div><h3>Deposit &amp; details</h3><p>50% deposit. 15-minute call or a text thread — your services, your area, your photos.</p></div>
+      <div class="step"><div class="day">Day 2–3</div><h3>Build</h3><p>All pages, structured data, Google Business Profile alignment, speed tuning.</p></div>
+      <div class="step"><div class="day">Day 4</div><h3>Your review</h3><p>You go through it on your phone. We change what you want changed.</p></div>
+      <div class="step"><div class="day">Day 5</div><h3>Live</h3><p>On your domain. Balance due at launch. Care Plan starts the following month.</p></div>
+    </div>
+  </div>
+</section>
+<section id="faq" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head"><div class="eyebrow">Questions contractors ask</div><h2 style="margin-top:12px">Straight answers</h2></div>
+    <div class="faq">
+      <div><h3>I already have a website. Why change it?</h3><p>Most contractor sites were built for 2016 Google. Pull up ChatGPT and ask it for your trade in your town. If it doesn't name you, your site isn't doing its job — and neither is your Google listing.</p></div>
+      <div><h3>Do I own the site?</h3><p>Yes. Your domain, your content, your files. If you leave the Care Plan we hand you everything and help you move it.</p></div>
+      <div><h3>What's "AI-answer ready" actually mean?</h3><p>The site is written and structured so ChatGPT, Google's AI Overviews, Siri and Perplexity can read exactly what you do, where, and when. Service pages per trade, hours and area in machine-readable form, reviews marked up correctly.</p></div>
+      <div><h3>How is the homepage free?</h3><p>It costs us time, not money, and it's the best way to show you what you'd be paying for. About one in five contractors we send one to hires us. That's the whole business.</p></div>
+      <div><h3>Can I get a free homepage if I'm not in the GTA?</h3><p>Yes — we started in Toronto but the work is the same anywhere in Canada. Ask.</p></div>
+      <div><h3>Who's actually building this?</h3><p>Northsite is run end-to-end by an AI system supervised by a Toronto operator. That's why we can build a homepage before you pay and still turn a full site around in five days.</p></div>
+    </div>
+  </div>
+</section>
+<section id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact">
+      <div>
+        <div class="eyebrow">Get your free homepage</div>
+        <div class="big" style="margin-top:10px">Send us your company name and your trade. That's it.</div>
+        <p>We'll reply within one business day with a link to your new homepage. No forms, no sales call.</p>
+      </div>
+      <div class="box">
+        <div class="k">Email</div>
+        <a href="mailto:northsite.ca@gmail.com?subject=Free%20homepage%20for%20my%20company&body=Company%3A%0ATrade%3A%0ACity%3A%0ACurrent%20website%20(if%20any)%3A">Email Northsite</a>
+        <div class="k" style="margin-top:16px">Based in</div>
+        <div style="margin-top:4px">Toronto, Ontario · serving the GTA and all of Canada</div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="wrap">
+  <footer class="site">
+    <span>© 2026 Northsite · Toronto</span>
+    <span>Prices in CAD, HST extra. Care Plan month-to-month.</span>
+  </footer>
+</div>
+</body>
+</html>
