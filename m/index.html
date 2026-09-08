@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Homepage preview — Northsite</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="stylesheet" href="/m/mockup.css">
+<style>:root{--a:#1B6FB8;--d:#0E2A47;--l:#EEF4FA;--ink:#1B1F24;--mute:#5F6773;--line:#E2E5EA}</style>
+</head><body>
+<div id="app"><div class="nsbar"><b>Loading preview…</b></div></div>
+<script>
+const T={
+plumb:{label:"Plumbing",a:"#1B6FB8",d:"#0E2A47",l:"#EEF4FA",s:["Emergency plumbing","Drain cleaning & camera inspection","Water heater repair & install","Leak detection & repair","Sump pumps & backwater valves","Bathroom & kitchen rough-ins"],p:"Same-day service. Upfront pricing. Licensed & insured.",h:"Plumbers who show up when they say they will."},
+hvac:{label:"Heating & Cooling",a:"#D9481F",d:"#2B1A14",l:"#FBF1EC",s:["Furnace repair & replacement","Air conditioning install & service","Heat pumps & rebates","Ductless mini-splits","Maintenance plans","Indoor air quality"],p:"24/7 emergency service. Upfront pricing. Licensed technicians.",h:"Your furnace quit at 2 a.m.? We pick up."},
+electric:{label:"Electrical",a:"#E0A100",d:"#1E1E1E",l:"#FBF7EA",s:["Panel upgrades (100A → 200A)","EV charger installation","Knob-and-tube replacement","Pot lights & lighting","Emergency electrical","ESA inspections & permits"],p:"Licensed electricians. Permits handled. Clean work, every time.",h:"Licensed electricians. No surprises on the bill."},
+roof:{label:"Roofing",a:"#7A4A2B",d:"#241A14",l:"#F6F0EA",s:["Shingle roof replacement","Flat roofing (TPO/EPDM)","Roof repair & leak fixes","Eavestrough & soffit","Skylights","Emergency tarping"],p:"Free written estimates. Workmanship warranty.",h:"Roofs done right the first time."},
+landscap:{label:"Landscaping",a:"#2E7D32",d:"#14261A",l:"#EEF6EF",s:["Interlock & patios","Sod & lawn installation","Retaining walls","Garden design","Snow removal contracts","Fences & decks"],p:"Design, build, and maintain — one crew, start to finish.",h:"Outdoor spaces you'll actually use."},
+renov:{label:"Renovations",a:"#3C5A99",d:"#161B29",l:"#EEF1F8",s:["Kitchen renovations","Bathroom renovations","Basement finishing","Additions & extensions","Permits & drawings","Project management"],p:"Fixed-price contracts. Weekly progress photos. On schedule.",h:"Renovations without the horror stories."},
+paint:{label:"Painting",a:"#8E44AD",d:"#241A2E",l:"#F4EEF8",s:["Interior painting","Exterior painting","Cabinet refinishing","Drywall repair","Commercial painting","Staining & decks"],p:"Clean lines. Clean job site. Written quotes.",h:"Painters who show up, tape properly, and finish on time."}};
+const esc=s=>String(s||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=p=>{const d=(p||"").replace(/\D/g,"").replace(/^1(\d{10})$/,"$1");return d.length===10?`(${d.slice(0,3)}) ${d.slice(3,6)}-${d.slice(6)}`:(p||"")};
+const q=new URLSearchParams(location.search);
+async function main(){
+  let r=null;
+  if(q.get("d")&&q.get("k")){try{const j=await (await fetch(`/m/d/${q.get("d")}.json`)).json();r=j[q.get("k")];}catch(e){}}
+  if(!r&&q.get("n")){r={n:q.get("n"),t:q.get("t")||"renov",c:q.get("c")||"Toronto",p:q.get("p")||"",a:q.get("a")||""};}
+  if(!r){document.getElementById("app").innerHTML='<div class="nsbar"><b>Preview not found.</b> Email <a href="mailto:northsite.ca@gmail.com">northsite.ca@gmail.com</a> and we\'ll resend your link.</div>';return;}
+  const th=T[r.t]||T.renov, n=esc(r.n), c=esc(r.c), ph=fmt(r.p), ad=esc(r.a||`${r.c}, Ontario`);
+  document.documentElement.style.setProperty("--a",th.a);document.documentElement.style.setProperty("--d",th.d);document.documentElement.style.setProperty("--l",th.l);
+  document.title=`${r.n} — ${th.label} in ${r.c}`;
+  const all=["Toronto","Etobicoke","Mississauga","Vaughan","Brampton","North York","Scarborough","Oakville","Markham","Richmond Hill"];
+  const areas=[r.c].concat(all.filter(x=>x.toLowerCase()!==String(r.c).toLowerCase())).slice(0,8);
+  document.getElementById("app").innerHTML=`
+<div class="nsbar"><b>Preview</b> — a homepage Northsite built for ${n}. Placeholder text and reviews are swapped for the real thing before launch. Questions: <a href="mailto:northsite.ca@gmail.com">northsite.ca@gmail.com</a></div>
+<div class="top"><div class="wrap"><span>${ad}</span><span>Mon–Sat 7am–8pm · Emergency service 24/7</span></div></div>
+<div class="wrap"><nav><div class="brand">${n}<small>${th.label} · ${c}</small></div><div class="links"><a>Services</a><a>Service area</a><a>Reviews</a><a>About</a></div><a class="call" href="tel:${ph}">Call ${ph}</a></nav></div>
+<div class="hero"><div class="wrap"><h1>${th.h}</h1><p>${th.label} for homes and businesses across ${c} and the GTA. ${th.p}</p>
+<div class="cta"><a class="call" href="tel:${ph}">Call ${ph}</a><a class="ghost" href="#quote">Request a quote</a></div>
+<div class="badges"><span>Licensed &amp; insured</span><span>Upfront pricing</span><span>Locally owned in ${c}</span><span>Reviews on Google</span></div></div></div>
+<section><div class="wrap"><h2>What we do</h2><p class="sub">Straightforward ${th.label.toLowerCase()} work, priced before we start.</p><ul class="svc">${th.s.map(s=>`<li><span></span>${esc(s)}</li>`).join("")}</ul></div></section>
+<section class="why"><div class="wrap"><h2>Why ${c} calls ${n}</h2><p class="sub">The things that matter when you're letting someone into your home.</p>
+<div class="grid"><div><b>We answer the phone</b><p>A real person, seven days a week. Not a call centre.</p></div><div><b>Price before work</b><p>You approve the number in writing before anyone picks up a tool.</p></div><div><b>Clean and on time</b><p>Boot covers, drop sheets, and a text when we're 20 minutes out.</p></div></div></div></section>
+<section><div class="wrap"><h2>What customers say</h2><p class="sub">Your Google reviews, pulled in live once the site launches (placeholders shown).</p>
+<div class="rev"><div><div class="stars">★★★★★</div><p><em>Sample placeholder — your real Google review #1 appears here, pulled automatically.</em></p><i>— Google reviewer, ${c}</i></div><div><div class="stars">★★★★★</div><p><em>Sample placeholder — your real Google review #2 appears here.</em></p><i>— Google reviewer, ${esc(areas[1])}</i></div><div><div class="stars">★★★★★</div><p><em>Sample placeholder — your real Google review #3 appears here.</em></p><i>— Google reviewer, ${esc(areas[2])}</i></div></div></div></section>
+<section class="area"><div class="wrap"><h2>Service area</h2><p class="sub">Based in ${c}. On the road across the GTA.</p><div class="list">${areas.map(esc).join(" · ")}</div></div></section>
+<section id="quote"><div class="wrap"><div class="contact"><div><h2>Get a quote today</h2><p class="sub">Call, or send the form and we'll reply within the hour during business hours.</p><a class="big" href="tel:${ph}">${ph}</a><p style="color:var(--mute);margin:0">${ad}<br>Mon–Sat 7am–8pm · Emergency 24/7</p></div>
+<form><input placeholder="Your name"><input placeholder="Phone"><select><option>What do you need?</option>${th.s.map(s=>`<option>${esc(s)}</option>`).join("")}</select><textarea rows="3" placeholder="Tell us a bit about the job"></textarea><button type="button">Request a quote</button></form></div></div></section>
+<div class="wrap"><footer><span>© 2026 ${n} · ${c}, Ontario</span><span>Licensed · Insured</span></footer></div>
+<a class="sticky" href="tel:${ph}">📞 Call ${ph}</a>`;
+}
+main();
+</script>
+</body></html>
