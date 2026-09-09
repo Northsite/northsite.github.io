@@ -68,7 +68,7 @@ p{margin:0}a{color:inherit}
 .demo .tag{position:absolute;z-index:2;left:-150px;top:70px;background:rgba(15,27,48,.85);border:1px solid var(--line);backdrop-filter:blur(10px);padding:12px 14px;border-radius:14px;font-size:13px;box-shadow:0 20px 40px rgba(0,0,0,.4);animation:floaty 8s ease-in-out -3s infinite;max-width:210px}
 .demo .tag b{display:block;font-family:"Space Grotesk";font-size:15px;margin-bottom:2px}.demo .tag.t2{left:auto;right:-150px;top:auto;bottom:110px;animation-delay:-5s}
 .demo .tag em{font-style:normal;color:var(--teal)}
-@media(max-width:960px){.demo .tag{left:-6px;top:40px}.demo .tag.t2{right:-6px;bottom:70px}}
+@media(max-width:960px){.demo .tag,.demo .tag.t2{position:static;margin:12px auto 0;max-width:none;animation:none}.demo .tag{display:none}}
 /* ticker */
 .ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;overflow:hidden;background:rgba(255,255,255,.02)}
 .ticker .track{display:flex;gap:40px;width:max-content;white-space:nowrap;animation:tick 60s linear infinite;font-size:14px;font-weight:600;color:var(--ink2);letter-spacing:.04em;text-transform:uppercase}.ticker span:before{content:"✦";color:var(--o);margin-right:40px;font-size:11px}
