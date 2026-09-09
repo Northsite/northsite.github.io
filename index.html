@@ -3,273 +3,250 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Northsite — websites that get local businesses found on Google and in AI answers</title>
+<meta name="description" content="Northsite builds fast, premium websites for GTA service businesses and makes them readable to Google, ChatGPT and Siri. See your homepage before you pay a dollar.">
 <link rel="canonical" href="https://northsite.ca/">
-<meta property="og:title" content="Northsite — websites for GTA trade contractors">
-<meta property="og:description" content="Websites that get contractors found — on Google and in AI answers. Free homepage before you pay.">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Northsite","url":"https://northsite.ca/","email":"northsite.ca@gmail.com","description":"Websites and AI-search visibility for trade contractors in the Greater Toronto Area.","areaServed":{"@type":"AdministrativeArea","name":"Greater Toronto Area"},"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"priceRange":"$199–$4,900"}</script>
-<title>Northsite</title>
-<meta name="description" content="Websites that get GTA trade contractors found — on Google and in AI answers.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<meta property="og:title" content="Northsite — see your new homepage before you pay">
+<meta property="og:description" content="Premium websites for Toronto-area service businesses, built to be recommended by Google and ChatGPT. Free homepage first, $2,450 flat, live in 5 days.">
+<meta property="og:url" content="https://northsite.ca/">
+<meta name="theme-color" content="#070C16">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Northsite","url":"https://northsite.ca/","email":"northsite.ca@gmail.com","description":"Websites and AI-search visibility for local service businesses in the Greater Toronto Area.","areaServed":{"@type":"AdministrativeArea","name":"Greater Toronto Area"},"address":{"@type":"PostalAddress","addressLocality":"Toronto","addressRegion":"ON","addressCountry":"CA"},"priceRange":"$199–$4,900","makesOffer":[{"@type":"Offer","name":"AI Visibility Kit","price":"199","priceCurrency":"CAD"},{"@type":"Offer","name":"Launch website","price":"2450","priceCurrency":"CAD"},{"@type":"Offer","name":"Growth website","price":"4900","priceCurrency":"CAD"}]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
 <style>
-:root{
-  --bg:#F7F5F0; --bg2:#EEEAE1; --ink:#14202E; --ink2:#4A5668; --mute:#7C8798;
-  --navy:#0B1F3A; --navy2:#142D52; --on-navy:#F7F5F0; --on-navy2:#B7C3D6;
-  --accent:#FF6A13; --accent-ink:#1A0B00; --line:#D9D3C6; --pass:#1F8A4C; --fail:#C8321E;
-  --card:#FFFFFF;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --bg:#0E1622; --bg2:#152033; --ink:#EEF1F5; --ink2:#B7C3D6; --mute:#8593A8;
-    --navy:#0A1830; --navy2:#122644; --line:#2A3A54; --card:#152033; --pass:#3DBB72; --fail:#F0644E;
-  }
-}
-:root[data-theme="dark"]{
-  --bg:#0E1622; --bg2:#152033; --ink:#EEF1F5; --ink2:#B7C3D6; --mute:#8593A8;
-  --navy:#0A1830; --navy2:#122644; --line:#2A3A54; --card:#152033; --pass:#3DBB72; --fail:#F0644E;
-}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,-apple-system,Segoe UI,sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased}
-h1,h2,h3{font-family:"Barlow Condensed","Arial Narrow",Impact,sans-serif;text-wrap:balance;margin:0;line-height:1.02;letter-spacing:-.005em}
-h1{font-size:clamp(44px,7vw,84px);font-weight:800;text-transform:uppercase}
-h2{font-size:clamp(34px,4.5vw,54px);font-weight:700;text-transform:uppercase}
-h3{font-size:24px;font-weight:700}
-p{margin:0}
-a{color:inherit}
-.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-.eyebrow{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
-.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;padding:15px 22px;border-radius:4px;font-size:16px;border:0;cursor:pointer}
-.btn:hover{filter:brightness(1.06)} .btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
-.btn.ghost{background:transparent;color:inherit;border:1.5px solid currentColor}
-nav{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-.logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:28px;letter-spacing:.02em;text-transform:uppercase;text-decoration:none;display:flex;align-items:center;gap:8px}
-.logo i{display:inline-block;width:14px;height:14px;background:var(--accent);clip-path:polygon(50% 0,100% 100%,0 100%)}
-nav .links{display:flex;gap:26px;font-size:15px;font-weight:500}
-nav .links a{text-decoration:none;color:var(--ink2)} nav .links a:hover{color:var(--ink)}
-@media(max-width:700px){nav .links{display:none}}
-.hero{padding:56px 0 64px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-@media(max-width:860px){.hero{grid-template-columns:1fr;gap:36px}}
-.hero .lede{font-size:20px;color:var(--ink2);max-width:34em;margin-top:22px}
-.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px;align-items:center}
-.hero .fine{font-size:14px;color:var(--mute);margin-top:14px}
-.hl{background:linear-gradient(transparent 62%,var(--accent) 62%,var(--accent) 92%,transparent 92%);padding:0 .06em}
-.report{background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 20px 50px -30px rgba(11,31,58,.35);font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:13.5px;overflow:hidden}
-.report header{background:var(--navy);color:var(--on-navy);padding:14px 18px;display:flex;justify-content:space-between;align-items:center}
-.report header b{font-family:"Barlow Condensed",sans-serif;font-size:18px;letter-spacing:.06em;text-transform:uppercase;font-weight:700}
-.report header span{color:var(--on-navy2);font-size:12px}
-.report .q{padding:16px 18px;border-bottom:1px solid var(--line);color:var(--ink2)}
-.report .q em{font-style:normal;color:var(--ink)}
-.report table{width:100%;border-collapse:collapse}
-.report td{padding:11px 18px;border-bottom:1px solid var(--line);vertical-align:top}
-.report td:first-child{width:38px;color:var(--mute)}
-.report td:last-child{text-align:right;white-space:nowrap;font-weight:500}
-.report tr:last-child td{border-bottom:0}
-.tag{display:inline-block;padding:2px 8px;border-radius:3px;font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
-.tag.pass{background:color-mix(in srgb,var(--pass) 14%,transparent);color:var(--pass)}
-.tag.fail{background:color-mix(in srgb,var(--fail) 14%,transparent);color:var(--fail)}
-.report .you{background:color-mix(in srgb,var(--fail) 7%,transparent)}
-.report footer{padding:14px 18px;font-size:12.5px;color:var(--mute);border-top:1px dashed var(--line)}
-.band{background:var(--navy);color:var(--on-navy);padding:64px 0}
-.band .eyebrow{color:var(--on-navy2)}
-.band p{color:var(--on-navy2)}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
-@media(max-width:700px){.stats{grid-template-columns:1fr}}
-.stat b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:56px;font-weight:800;line-height:1;color:var(--on-navy);font-variant-numeric:tabular-nums}
-.stat span{display:block;margin-top:8px;font-size:15px;color:var(--on-navy2);max-width:22em}
-section{padding:72px 0}
-.sec-head{max-width:40em;margin-bottom:40px}
-.sec-head p{margin-top:14px;color:var(--ink2);font-size:18px}
-.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-@media(max-width:860px){.offers{grid-template-columns:1fr}}
-.offer{background:var(--card);border:1px solid var(--line);padding:26px;display:flex;flex-direction:column;gap:14px;border-radius:6px}
-.offer.lead{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 25%,transparent)}
-.offer .price{font-family:"Barlow Condensed",sans-serif;font-size:44px;font-weight:800;line-height:1;font-variant-numeric:tabular-nums}
-.offer .price small{font-family:"IBM Plex Sans",sans-serif;font-size:14px;font-weight:500;color:var(--mute);margin-left:6px}
-.offer ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;color:var(--ink2);font-size:15.5px}
-.offer li{padding-left:20px;position:relative}
-.offer li::before{content:"";position:absolute;left:0;top:9px;width:10px;height:10px;background:var(--accent);clip-path:polygon(50% 0,100% 100%,0 100%)}
-.offer .btn{margin-top:auto;justify-content:center}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:2px solid var(--ink)}
-@media(max-width:860px){.steps{grid-template-columns:1fr}}
-.step{padding:22px 18px 22px 0;border-right:1px solid var(--line)}
-.step:last-child{border-right:0}
-@media(max-width:860px){.step{border-right:0;border-bottom:1px solid var(--line);padding-right:0}}
-.step .day{font-family:"Barlow Condensed",sans-serif;font-size:30px;font-weight:800;color:var(--accent);line-height:1}
-.step h3{font-size:20px;margin-top:8px}
-.step p{margin-top:8px;color:var(--ink2);font-size:15px}
-.faq{display:grid;grid-template-columns:1fr 1fr;gap:28px 40px}
-@media(max-width:760px){.faq{grid-template-columns:1fr}}
-.faq h3{font-size:22px;margin-bottom:8px}
-.faq p{color:var(--ink2);font-size:16px}
-.contact{background:var(--bg2);border-radius:8px;padding:44px;display:grid;grid-template-columns:1.2fr .8fr;gap:32px;align-items:center}
-@media(max-width:760px){.contact{grid-template-columns:1fr;padding:28px}}
-.contact .big{font-family:"Barlow Condensed",sans-serif;font-size:clamp(30px,4vw,44px);font-weight:700;text-transform:uppercase;line-height:1.05}
-.contact p{margin-top:12px;color:var(--ink2)}
-.contact .box{background:var(--card);border:1px solid var(--line);padding:22px;border-radius:6px;font-size:15px}
-.contact .box a{display:block;font-weight:600;text-decoration:none;font-size:18px;margin-top:6px}
-.contact .box .k{color:var(--mute);font-size:13px;text-transform:uppercase;letter-spacing:.1em;font-family:"IBM Plex Mono",monospace}
-footer.site{padding:36px 0 48px;color:var(--mute);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;border-top:1px solid var(--line)}
-@media (prefers-reduced-motion:no-preference){
-  .report tr.you td{animation:flash 2.4s ease-in-out 1s 2}
-  @keyframes flash{50%{background:color-mix(in srgb,var(--fail) 18%,transparent)}}
-}
+:root{--bg:#070C16;--bg2:#0B1424;--panel:#0F1B30;--ink:#F3F6FB;--ink2:#B6C2D6;--mute:#7E8CA3;--line:rgba(255,255,255,.09);--o:#FF6A13;--o2:#FF8C42;--blue:#2F7BFF;--teal:#19C6A6;--r:20px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,.sg{font-family:"Space Grotesk",Inter,sans-serif;letter-spacing:-.03em;line-height:1.02;margin:0;text-wrap:balance}
+h1{font-size:clamp(34px,4.4vw,62px);font-weight:700}h2{font-size:clamp(32px,4.4vw,56px);font-weight:700}h3{font-size:22px;font-weight:600;letter-spacing:-.01em}
+p{margin:0}a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--o2)}.kicker:before{content:"";width:22px;height:2px;background:var(--o)}
+.sub{color:var(--ink2);font-size:18px;max-width:40em;margin-top:16px;text-wrap:pretty}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--o);color:#140700;font-weight:700;text-decoration:none;padding:15px 24px;border-radius:14px;font-size:16px;border:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;box-shadow:0 12px 34px rgba(255,106,19,.35);font-family:inherit}
+.btn:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.35) 50%,transparent 70%);transform:translateX(-120%);transition:transform .6s}.btn:hover:after{transform:translateX(120%)}.btn:hover{transform:translateY(-2px);box-shadow:0 18px 44px rgba(255,106,19,.45)}
+.btn svg{width:18px;height:18px}
+.btn.ghost{background:rgba(255,255,255,.06);color:var(--ink);border:1px solid rgba(255,255,255,.16);box-shadow:none;backdrop-filter:blur(8px)}.btn.ghost:hover{background:rgba(255,255,255,.1);box-shadow:none}
+.btn.white{background:#fff;color:#0B1F3A;box-shadow:0 12px 34px rgba(255,255,255,.15)}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+.nav.solid{background:rgba(7,12,22,.72);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Space Grotesk";font-weight:700;font-size:22px;letter-spacing:-.02em}
+.logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--o),#FFB070);display:grid;place-items:center;position:relative;box-shadow:0 6px 18px rgba(255,106,19,.45)}.logo i:after{content:"";width:12px;height:12px;background:#0B1F3A;clip-path:polygon(50% 0,100% 100%,0 100%)}
+.nav .links{display:flex;gap:28px;font-size:14.5px;font-weight:500;color:var(--ink2)}.nav .links a{text-decoration:none;transition:color .2s}.nav .links a:hover{color:#fff}
+.nav .right{display:flex;gap:10px;align-items:center}.nav .btn{padding:11px 16px;font-size:14px}
+.nav .btn .sm{display:none}@media(max-width:900px){.nav .links{display:none}.nav .wrap{padding:12px 18px}.wrap{padding:0 18px}.nav .btn .lg{display:none}.nav .btn .sm{display:inline}}
+/* hero */
+.hero{position:relative;overflow:hidden;padding:80px 0 60px;min-height:calc(100vh - 70px);display:flex;align-items:center}
+.aurora{position:absolute;inset:-20% -10%;z-index:0;filter:blur(70px);opacity:.75;pointer-events:none}
+.aurora i{position:absolute;border-radius:50%;mix-blend-mode:screen;animation:drift 18s ease-in-out infinite alternate}
+.aurora i:nth-child(1){width:52vw;height:52vw;left:-10%;top:-10%;background:radial-gradient(circle,#FF6A13 0%,rgba(255,106,19,0) 60%);opacity:.55}
+.aurora i:nth-child(2){width:46vw;height:46vw;right:-8%;top:0;background:radial-gradient(circle,#2F7BFF 0%,rgba(47,123,255,0) 60%);opacity:.5;animation-delay:-6s}
+.aurora i:nth-child(3){width:40vw;height:40vw;left:30%;bottom:-20%;background:radial-gradient(circle,#19C6A6 0%,rgba(25,198,166,0) 60%);opacity:.35;animation-delay:-12s}
+@keyframes drift{0%{transform:translate(0,0) scale(1)}50%{transform:translate(6vw,-4vw) scale(1.12)}100%{transform:translate(-4vw,5vw) scale(.95)}}
+.grid-bg{position:absolute;inset:0;z-index:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 70% 60% at 50% 40%,#000 30%,transparent 100%);pointer-events:none}
+.grain{position:absolute;inset:0;z-index:0;opacity:.07;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;width:100%}
+@media(max-width:960px){.hero{min-height:0;padding:56px 0 40px}.hero .wrap{grid-template-columns:1fr;gap:40px}}
+.pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:8px 14px 8px 10px;border-radius:999px;font-size:13px;font-weight:600;color:var(--ink2);backdrop-filter:blur(8px)}
+.pill b{width:8px;height:8px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 0 rgba(25,198,166,.6);animation:pulse 2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(25,198,166,0)}100%{box-shadow:0 0 0 0 rgba(25,198,166,0)}}
+.hero h1{margin-top:22px}.hero h1 .tw{color:var(--o2);border-bottom:3px solid rgba(255,106,19,.5)}
+.hero h1 .cur{display:inline-block;width:.06em;height:.9em;background:var(--o2);vertical-align:-.08em;margin-left:2px;animation:blink 1s steps(2) infinite}@keyframes blink{50%{opacity:0}}
+.hero .lede{font-size:clamp(17px,1.5vw,20px);color:var(--ink2);max-width:33em;margin-top:22px;text-wrap:pretty}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px;align-items:center}
+.hero .fine{margin-top:16px;font-size:14px;color:var(--mute)}
+.proof{display:flex;gap:26px;flex-wrap:wrap;margin-top:34px;font-size:13.5px;color:var(--ink2);font-weight:500}.proof span{display:inline-flex;gap:8px;align-items:center}.proof svg{width:16px;height:16px;color:var(--teal)}
+/* phone demo */
+.demo{position:relative;justify-self:center;width:min(310px,100%)}.demo .phone{position:relative;z-index:1}
+.phone{position:relative;width:100%;aspect-ratio:9/19;border-radius:44px;background:#0a0f1a;border:1px solid rgba(255,255,255,.14);box-shadow:0 60px 120px rgba(0,0,0,.6),0 0 0 8px rgba(255,255,255,.04),inset 0 0 0 2px rgba(255,255,255,.06);padding:12px;animation:floaty 8s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-10px)}}
+.phone .screen{position:relative;width:100%;height:100%;border-radius:34px;overflow:hidden;background:#111}
+.phone .notch{position:absolute;top:10px;left:50%;translate:-50% 0;width:34%;height:26px;background:#0a0f1a;border-radius:20px;z-index:3}
+.phone iframe{width:390px;height:844px;border:0;transform-origin:0 0;position:absolute;left:0;top:0;pointer-events:none;background:#fff}
+.demo .tag{position:absolute;z-index:2;left:-150px;top:70px;background:rgba(15,27,48,.85);border:1px solid var(--line);backdrop-filter:blur(10px);padding:12px 14px;border-radius:14px;font-size:13px;box-shadow:0 20px 40px rgba(0,0,0,.4);animation:floaty 8s ease-in-out -3s infinite;max-width:210px}
+.demo .tag b{display:block;font-family:"Space Grotesk";font-size:15px;margin-bottom:2px}.demo .tag.t2{left:auto;right:-150px;top:auto;bottom:110px;animation-delay:-5s}
+.demo .tag em{font-style:normal;color:var(--teal)}
+@media(max-width:960px){.demo .tag{left:-6px;top:40px}.demo .tag.t2{right:-6px;bottom:70px}}
+/* ticker */
+.ticker{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:16px 0;overflow:hidden;background:rgba(255,255,255,.02)}
+.ticker .track{display:flex;gap:40px;width:max-content;white-space:nowrap;animation:tick 60s linear infinite;font-size:14px;font-weight:600;color:var(--ink2);letter-spacing:.04em;text-transform:uppercase}.ticker span:before{content:"✦";color:var(--o);margin-right:40px;font-size:11px}
+@keyframes tick{to{transform:translateX(-50%)}}
+/* sections */
+section{padding:100px 0;position:relative}@media(max-width:900px){section{padding:70px 0}}
+.head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:48px}@media(max-width:900px){.head{grid-template-columns:1fr;gap:16px}}
+/* AI check */
+.check{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}@media(max-width:960px){.check{grid-template-columns:1fr}}
+.chat{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:22px;box-shadow:0 40px 80px rgba(0,0,0,.4);position:relative;overflow:hidden}
+.chat:before{content:"";position:absolute;inset:0;background:radial-gradient(500px 200px at 100% 0%,rgba(47,123,255,.18),transparent 60%);pointer-events:none}
+.chat .row{display:flex;gap:12px;margin-bottom:16px;position:relative}.chat .av{flex:none;width:32px;height:32px;border-radius:10px;display:grid;place-items:center;font-size:12px;font-weight:800}.chat .u .av{background:rgba(255,255,255,.1)}.chat .a .av{background:#10A37F;color:#fff}
+.chat .bub{background:rgba(255,255,255,.05);border:1px solid var(--line);padding:12px 14px;border-radius:14px;font-size:15px;line-height:1.5;flex:1}
+.chat .ans{font-family:"Space Grotesk";font-size:15px}.chat ol{margin:8px 0 0;padding-left:20px;display:grid;gap:6px}.chat li{opacity:0;transform:translateX(-6px);transition:.4s}.chat li.in{opacity:1;transform:none}
+.chat .miss{margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(200,50,30,.14);border:1px solid rgba(240,100,78,.35);color:#FFB4A6;font-size:13.5px;display:flex;gap:8px;align-items:center;opacity:0;transition:.5s .2s}.chat .miss.in{opacity:1}
+.chat .fix{margin-top:12px;padding:10px 12px;border-radius:10px;background:rgba(25,198,166,.12);border:1px solid rgba(25,198,166,.4);color:#8FF0D9;font-size:13.5px;display:none;gap:8px;align-items:center}
+.chat.fixed .miss{display:none}.chat.fixed .fix{display:flex}.chat .you{color:var(--o2);font-weight:700}
+.toggle{display:inline-flex;background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:999px;padding:4px;margin-top:18px;font-size:13.5px;font-weight:600}.toggle button{border:0;background:transparent;color:var(--ink2);padding:8px 16px;border-radius:999px;cursor:pointer;font:inherit;font-weight:600}.toggle button.on{background:var(--o);color:#140700}
+.feat{display:grid;gap:18px;margin-top:28px}.feat div{display:flex;gap:14px;align-items:flex-start}.feat i{flex:none;width:34px;height:34px;border-radius:10px;background:rgba(255,106,19,.14);color:var(--o2);display:grid;place-items:center;font-style:normal}.feat i svg{width:18px;height:18px}.feat b{display:block;font-family:"Space Grotesk";font-size:17px}.feat span{color:var(--ink2);font-size:15px}
+/* builder */
+.builder{background:linear-gradient(180deg,var(--bg2),var(--bg));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.bgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}@media(max-width:960px){.bgrid{grid-template-columns:1fr}}
+.form{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:grid;gap:12px;box-shadow:0 40px 80px rgba(0,0,0,.4)}
+.form label{font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mute)}
+.form input,.form select{width:100%;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);color:var(--ink);padding:14px;border-radius:12px;font:inherit;font-size:16px}.form input:focus,.form select:focus{outline:2px solid rgba(255,106,19,.6);border-color:var(--o)}.form select option{color:#111}
+.form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:560px){.form .two{grid-template-columns:1fr}}
+.form .out{font-size:13.5px;color:var(--mute);text-align:center}.form .out a{color:var(--teal)}
+.showcase{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:44px}@media(max-width:900px){.showcase{grid-template-columns:repeat(2,1fr)}}
+.showcase a{position:relative;display:block;aspect-ratio:4/3;border-radius:16px;overflow:hidden;text-decoration:none;border:1px solid var(--line);background:#111}
+.showcase .im{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s;filter:saturate(.9)}.showcase a:hover .im{transform:scale(1.07)}
+.showcase .cap{position:absolute;inset:auto 0 0 0;padding:40px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-weight:700;font-size:14px}.showcase .cap small{display:block;font-weight:500;color:var(--ink2);font-size:12px}
+.showcase .go{position:absolute;top:12px;right:12px;width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.14);backdrop-filter:blur(8px);display:grid;place-items:center;font-size:14px;transition:.2s}.showcase a:hover .go{background:var(--o);color:#140700}
+/* pricing */
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px;align-items:stretch}@media(max-width:960px){.plans{grid-template-columns:1fr}}
+.plan{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:30px;display:flex;flex-direction:column;gap:18px;transition:transform .25s,border-color .25s}.plan:hover{transform:translateY(-6px);border-color:rgba(255,255,255,.2)}
+.plan:before{content:"";position:absolute;inset:-1px;border-radius:inherit;padding:1px;background:radial-gradient(300px 200px at var(--mx,50%) var(--my,0%),rgba(255,255,255,.35),transparent 60%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:0;transition:opacity .3s}.plan:hover:before{opacity:1}
+.plan.lead{background:linear-gradient(180deg,#132244,#0F1B30);border-color:rgba(255,106,19,.45);box-shadow:0 40px 90px rgba(255,106,19,.12)}
+.plan .badge{position:absolute;top:-13px;left:26px;background:var(--o);color:#140700;font-size:11.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.plan .name{font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}.plan h3{font-size:24px;margin-top:6px}
+.plan .price{font-family:"Space Grotesk";font-size:48px;font-weight:700;letter-spacing:-.04em;line-height:1}.plan .price small{font-size:14px;color:var(--mute);font-weight:500;letter-spacing:0;margin-left:8px;font-family:Inter}
+.plan ul{list-style:none;padding:0;margin:0;display:grid;gap:10px;align-content:start;color:var(--ink2);font-size:15px;flex:1}.plan li{display:flex;gap:10px;align-items:flex-start}.plan li:before{content:"";flex:none;width:18px;height:18px;border-radius:50%;background:rgba(25,198,166,.15);margin-top:3px;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2319C6A6' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");background-size:11px;background-repeat:no-repeat;background-position:center}
+.plan .btn{justify-content:center}
+.care{margin-top:22px;color:var(--ink2);font-size:15px;max-width:60em}.care b{color:var(--ink)}
+/* kit */
+.kit{background:linear-gradient(135deg,#0B1F3A,#0F1B30 60%,#1A1330);border:1px solid var(--line);border-radius:var(--r);padding:44px;display:grid;grid-template-columns:1.3fr .7fr;gap:40px;align-items:center;position:relative;overflow:hidden}
+.kit:before{content:"";position:absolute;width:520px;height:520px;right:-160px;top:-200px;background:radial-gradient(circle,rgba(47,123,255,.35),transparent 60%);pointer-events:none}
+@media(max-width:900px){.kit{grid-template-columns:1fr;padding:28px}}
+.kit .box{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;position:relative}.kit .box .p{font-family:"Space Grotesk";font-size:44px;font-weight:700}.kit .box small{display:block;color:var(--mute);font-size:13px;margin-top:8px}
+.kit ul{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:8px;color:var(--ink2);font-size:15px}.kit li:before{content:"→ ";color:var(--o2)}
+/* process */
+.steps{position:relative;display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:48px}@media(max-width:960px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.steps:before{content:"";position:absolute;left:0;right:0;top:26px;height:2px;background:linear-gradient(90deg,var(--o),var(--blue),var(--teal));transform:scaleX(0);transform-origin:left;transition:transform 1.6s ease .2s}.steps.in:before{transform:scaleX(1)}@media(max-width:960px){.steps:before{display:none}}
+.step{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px;position:relative}.step .d{width:52px;height:52px;border-radius:50%;background:var(--bg);border:2px solid var(--o);display:grid;place-items:center;font-family:"Space Grotesk";font-weight:700;font-size:13px;color:var(--o2);margin:-48px 0 14px;position:relative}.step b{display:block;font-family:"Space Grotesk";font-size:18px;margin-bottom:6px}.step p{color:var(--ink2);font-size:14.5px}
+@media(max-width:960px){.step .d{margin-top:0}}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}@media(max-width:700px){.stats{grid-template-columns:1fr}}
+.stat{border:1px solid var(--line);border-radius:16px;padding:26px;background:rgba(255,255,255,.02)}.stat b{display:block;font-family:"Space Grotesk";font-size:52px;font-weight:700;letter-spacing:-.04em;color:#fff;line-height:1}.stat span{color:var(--ink2);font-size:15px;display:block;margin-top:10px}
+/* faq */
+.faq{display:grid;grid-template-columns:1fr 1.3fr;gap:56px}@media(max-width:900px){.faq{grid-template-columns:1fr;gap:20px}}
+.faq details{border-top:1px solid var(--line);padding:20px 0}.faq details:last-child{border-bottom:1px solid var(--line)}.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:"Space Grotesk";font-size:18px;font-weight:600}.faq summary::-webkit-details-marker{display:none}.faq summary:after{content:"+";color:var(--o2);font-size:24px;line-height:1;transition:transform .2s}.faq details[open] summary:after{transform:rotate(45deg)}.faq details p{color:var(--ink2);margin-top:12px;font-size:15.5px;max-width:44em}
+/* cta */
+.cta-band{text-align:center;position:relative;overflow:hidden}.cta-band .aurora{opacity:.5}
+.cta-band h2{font-size:clamp(36px,5.6vw,72px);max-width:14em;margin:0 auto}.cta-band .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:34px}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:14px}footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;align-items:center}footer a{text-decoration:none}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .8s ease,transform .8s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none}.aurora i,.phone,.demo .tag,.ticker .track,.pill b,.hero h1 .cur{animation:none}}
 </style>
 </head>
 <body>
+<div class="nav" id="nav"><div class="wrap"><a class="logo" href="#top"><i></i>Northsite</a><div class="links"><a href="#check">The problem</a><a href="#try">Try it</a><a href="#pricing">Pricing</a><a href="#kit">$199 Kit</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div><div class="right"><a class="btn" href="#try"><span class="lg">Build my free homepage</span><span class="sm">Free homepage</span></a></div></div></div>
+
+<div class="hero" id="top"><div class="aurora"><i></i><i></i><i></i></div><div class="grid-bg"></div><div class="grain"></div>
 <div class="wrap">
-  <nav>
-    <a class="logo" href="#top"><i></i>Northsite</a>
-    <div class="links">
-      <a href="#check">The check</a><a href="#offers">Pricing</a><a href="#kit">$199 Kit</a><a href="#how">How it works</a><a href="#faq">Questions</a><a href="#contact">Contact</a>
-    </div>
-  </nav>
-  <div class="hero" id="top">
-    <div>
-      <div class="eyebrow">Websites for GTA trade contractors</div>
-      <h1 style="margin-top:14px">Someone in your area just asked ChatGPT for a <span class="hl">plumber.</span><br>Were you the answer?</h1>
-      <p class="lede">Homeowners now ask Google, ChatGPT and Siri who to call. Those answers come from your website — or from your competitor's. Northsite builds fast, plain-spoken sites for HVAC, plumbing, electrical and roofing companies, and makes sure the machines can read them.</p>
-      <div class="cta">
-        <a class="btn" href="#contact">Get your free homepage — built before you pay</a>
-        <a class="btn ghost" href="#offers">See pricing</a>
-      </div>
-      <p class="fine">We build your new homepage first, for free, and send you the link. If you like it, we finish the site. If you don't, you owe nothing.</p>
-    </div>
-    <div class="report" id="check" aria-label="Example AI visibility check">
-      <header><b>AI visibility check</b><span>Etobicoke · HVAC · sample</span></header>
-      <div class="q">Asked ChatGPT: <em>"Who's a good furnace repair company near Etobicoke?"</em></div>
-      <table>
-        <tr><td>1</td><td>Competitor A — Mississauga</td><td><span class="tag pass">named</span></td></tr>
-        <tr><td>2</td><td>Competitor B — Etobicoke</td><td><span class="tag pass">named</span></td></tr>
-        <tr><td>3</td><td>Competitor C — Toronto West</td><td><span class="tag pass">named</span></td></tr>
-        <tr class="you"><td>—</td><td><strong>Your company</strong> · 4.8★ · 22 yrs in business</td><td><span class="tag fail">not found</span></td></tr>
-      </table>
-      <footer>Cause: no crawlable service pages, no structured business data, hours &amp; service area missing. Fixable in 5 days.</footer>
-    </div>
-  </div>
+<div>
+<span class="pill"><b></b>Now booking September builds · Toronto &amp; GTA</span>
+<h1>Someone just asked ChatGPT for a <span class="tw" id="tw">plumber in Etobicoke</span><span class="cur"></span><br>Were you the answer?</h1>
+<p class="lede">Homeowners now ask Google, ChatGPT and Siri who to call. Northsite builds premium, fast websites for local service businesses — and makes sure the machines can read them. We build your homepage first. You pay nothing until you've seen it.</p>
+<div class="cta"><a class="btn" href="#try"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h8l-1 8 10-12h-8z"/></svg>Build my free homepage</a><a class="btn ghost" href="#pricing">See pricing</a></div>
+<div class="proof"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>$0 until you see it</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Live in 5 business days</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>$2,450 flat · you own it</span></div>
 </div>
-<div class="band">
-  <div class="wrap">
-    <div class="eyebrow">Why this matters now</div>
-    <h2 style="margin-top:12px;max-width:16em">The phone book moved into the AI. Most contractor websites weren't built for it.</h2>
-    <div class="stats">
-      <div class="stat"><b>5 days</b><span>from deposit to live site. Not five weeks of "revisions."</span></div>
-      <div class="stat"><b>$0</b><span>until you've seen your new homepage with your own eyes.</span></div>
-      <div class="stat"><b>1 job</b><span>is usually what it takes to pay the whole site off.</span></div>
-    </div>
-  </div>
+<div class="demo"><div class="tag"><b>Built from public info</b>Name, trade, city, phone. That's all it takes for the first draft.</div>
+<div class="phone"><div class="notch"></div><div class="screen"><iframe id="ph" title="Live homepage demo" src="/m/?n=Griffiths+Roofing&amp;t=roof&amp;c=Toronto&amp;p=4165550100" loading="lazy"></iframe></div></div>
+<div class="tag t2"><b><em>Real site</em>, not a picture</b>This phone is showing an actual homepage we generate. Yours takes minutes.</div></div>
+</div></div>
+
+<div class="ticker"><div class="track" id="tick"></div></div>
+
+<section id="check"><div class="wrap"><div class="check">
+<div class="rv"><span class="kicker">The problem</span><h2 style="margin-top:14px">The phone book moved into the AI. Most local websites weren't built for it.</h2><p class="sub">When someone asks an AI assistant who to call, the answer is assembled from websites the machine can actually read. If yours is a 2016 template with no structured data, you're not in the conversation — no matter how good your reviews are.</p>
+<div class="feat"><div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></i><div><b>We run the check first</b><span>We ask ChatGPT and Google for your trade in your city and show you exactly who they name.</span></div></div><div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 12h8M8 8h8M8 16h5"/></svg></i><div><b>Then we fix the cause</b><span>Service pages per trade, hours and area in machine-readable form, reviews marked up correctly, a Google Business Profile that matches.</span></div></div><div><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></i><div><b>And we prove it</b><span>Every Care Plan includes a monthly report showing whether Google and the AIs are naming you.</span></div></div></div></div>
+<div class="rv"><div class="chat" id="chat"><div class="row u"><span class="av">You</span><div class="bub">Who's a good furnace repair company near Etobicoke?</div></div>
+<div class="row a"><span class="av">AI</span><div class="bub"><div class="ans">Here are three well-reviewed options in the area:</div><ol id="ol"><li><span id="n1">Competitor A</span> — Mississauga · 4.7★</li><li><span id="n2">Competitor B</span> — Etobicoke · 4.6★</li><li><span id="n3">Competitor C</span> — Toronto West · 4.8★</li></ol>
+<div class="miss" id="miss">✕ &nbsp;<span><b>Your company</b> · 4.8★ · 22 years in business — <b>not found</b>. No crawlable service pages, no structured data.</span></div>
+<div class="fix">✓ &nbsp;<span><b class="you">Your company</b> now listed first: structured data, service pages and hours the AI can read.</span></div></div></div></div>
+<div class="toggle"><button class="on" id="tb0">Before Northsite</button><button id="tb1">After Northsite</button></div></div>
+</div></div></section>
+
+<section class="builder" id="try"><div class="wrap"><div class="bgrid">
+<div class="rv"><span class="kicker">Try it right now</span><h2 style="margin-top:14px">See your homepage in 10 seconds.</h2><p class="sub">Type your business in. We'll generate a real, working homepage for your trade and city and show it on the phone — the same thing we email to businesses across the GTA every morning. No sign-up, no call.</p>
+<form class="form" id="bf" style="margin-top:28px" onsubmit="return false">
+<div><label>Business name</label><input id="fn" placeholder="e.g. Griffiths Roofing" autocomplete="organization"></div>
+<div class="two"><div><label>What you do</label><select id="ft"><option value="plumb">Plumbing</option><option value="hvac">Heating &amp; cooling</option><option value="electric">Electrical</option><option value="roof" selected>Roofing</option><option value="landscap">Landscaping</option><option value="renov">Renovations</option><option value="fence">Fences &amp; decks</option><option value="paving">Paving</option><option value="window">Windows &amp; doors</option><option value="garage">Garage doors</option><option value="move">Moving</option><option value="clean">Cleaning</option><option value="auto">Auto repair</option><option value="pest">Pest control</option><option value="paint">Painting</option><option value="salon">Hair &amp; beauty</option><option value="clinic">Physio / chiro / massage</option><option value="dental">Dental</option><option value="daycare">Childcare</option><option value="tutor">Tutoring</option><option value="catering">Catering</option><option value="photo">Photography</option><option value="vet">Veterinary</option><option value="account">Accounting</option></select></div><div><label>City</label><input id="fc" placeholder="Toronto" value="Toronto"></div></div>
+<div><label>Phone (shown on the site)</label><input id="fp" placeholder="(416) 555-0100" inputmode="tel"></div>
+<button class="btn" id="fb" type="button" style="justify-content:center">Generate my homepage →</button>
+<div class="out" id="fo">Your link appears here. Open it on your phone, send it to a partner.</div>
+</form></div>
+<div class="rv demo" style="justify-self:center"><div class="phone"><div class="notch"></div><div class="screen"><iframe id="ph2" title="Your generated homepage" src="about:blank" loading="lazy"></iframe></div></div></div>
 </div>
-<section id="offers">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">Pricing · CAD · no surprises</div>
-      <h2 style="margin-top:12px">Three ways to hire us</h2>
-      <p>Flat prices. Written down. Same for everyone.</p>
-    </div>
-    <div class="offers">
-      <div class="offer">
-        <div><div class="eyebrow">Rescue</div><h3 style="margin-top:6px">Fix what's broken</h3></div>
-        <div class="price">$650</div>
-        <ul>
-          <li>Broken, hacked, or painfully slow WordPress site repaired this week</li>
-          <li>Speed pass: Core Web Vitals in the green</li>
-          <li>Backups, updates, and a plain-English report of what was wrong</li>
-        </ul>
-        <a class="btn ghost" href="https://buy.stripe.com/14A00l3Rd0xw5ajcrt7Re02">Book a rescue — $650</a>
-      </div>
-      <div class="offer lead">
-        <div><div class="eyebrow">Launch site · most contractors</div><h3 style="margin-top:6px">A site that gets you found</h3></div>
-        <div class="price">$2,450<small>one-time</small></div>
-        <ul>
-          <li>5 pages: Home, Services, Service Area, About, Contact</li>
-          <li>Built for phones first — that's where 80% of your calls start</li>
-          <li>Google Business Profile tuned to match the site</li>
-          <li>AI-answer ready: structured data, service pages, hours, area</li>
-          <li>Click-to-call, quote form, reviews pulled in</li>
-          <li>Live in 5 business days</li>
-        </ul>
-        <a class="btn" href="#contact">Start with a free homepage</a>
-      </div>
-      <div class="offer">
-        <div><div class="eyebrow">Growth site</div><h3 style="margin-top:6px">Own your service area</h3></div>
-        <div class="price">$4,900<small>one-time</small></div>
-        <ul>
-          <li>Everything in Launch, plus online booking</li>
-          <li>Pages for each city you serve (Vaughan, Brampton, Oakville…)</li>
-          <li>3 months of monthly service articles the AIs cite</li>
-          <li>Reviews widget and before/after gallery</li>
-        </ul>
-        <a class="btn ghost" href="#contact">Talk about Growth</a>
-      </div>
-    </div>
-    <p style="margin-top:22px;color:var(--ink2);font-size:15.5px;max-width:52em">Every site includes a <strong>Care Plan</strong> at <strong>$149/month</strong> (Growth: $249): hosting, security, unlimited small edits, and a monthly report showing whether Google and the AIs are naming you. Cancel any month. Your site is yours either way.</p>
-  </div>
-</section>
-<section id="kit" style="padding-top:0">
-  <div class="wrap">
-    <div class="contact" style="background:var(--navy);color:var(--on-navy)">
-      <div>
-        <div class="eyebrow" style="color:var(--on-navy2)">Not ready for a new site? Start here · $199</div>
-        <div class="big" style="margin-top:10px">The AI Visibility Kit for your existing website.</div>
-        <p style="color:var(--on-navy2)">We audit your current site, write the structured data that Google, ChatGPT and Siri read, rewrite your page titles and descriptions, and hand you a 10-point Google Business Profile fix list — plus a before/after AI-answer check. Emailed within one business day. Paste it in yourself, or we install it for $149.</p>
-      </div>
-      <div class="box" style="background:var(--card);color:var(--ink)">
-        <div class="k">AI Visibility Kit · $199 CAD + HST</div>
-        <a class="btn" style="margin-top:12px;justify-content:center;display:flex" href="https://buy.stripe.com/eVqfZjdrN4NMbyH3UX7Re06">Get the kit</a>
-        <div style="margin-top:12px;font-size:13px;color:var(--mute)">Secure checkout by Stripe. Delivered by email in 1 business day.</div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="how" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="eyebrow">How it works</div>
-      <h2 style="margin-top:12px">Five business days. Here's the schedule.</h2>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="day">Day 0</div><h3>Free homepage</h3><p>We build your new homepage from your public info and send you a link. No call, no deposit.</p></div>
-      <div class="step"><div class="day">Day 1</div><h3>Deposit &amp; details</h3><p>50% deposit. 15-minute call or a text thread — your services, your area, your photos.</p></div>
-      <div class="step"><div class="day">Day 2–3</div><h3>Build</h3><p>All pages, structured data, Google Business Profile alignment, speed tuning.</p></div>
-      <div class="step"><div class="day">Day 4</div><h3>Your review</h3><p>You go through it on your phone. We change what you want changed.</p></div>
-      <div class="step"><div class="day">Day 5</div><h3>Live</h3><p>On your domain. Balance due at launch. Care Plan starts the following month.</p></div>
-    </div>
-  </div>
-</section>
-<section id="faq" style="padding-top:0">
-  <div class="wrap">
-    <div class="sec-head"><div class="eyebrow">Questions contractors ask</div><h2 style="margin-top:12px">Straight answers</h2></div>
-    <div class="faq">
-      <div><h3>I already have a website. Why change it?</h3><p>Most contractor sites were built for 2016 Google. Pull up ChatGPT and ask it for your trade in your town. If it doesn't name you, your site isn't doing its job — and neither is your Google listing.</p></div>
-      <div><h3>Do I own the site?</h3><p>Yes. Your domain, your content, your files. If you leave the Care Plan we hand you everything and help you move it.</p></div>
-      <div><h3>What's "AI-answer ready" actually mean?</h3><p>The site is written and structured so ChatGPT, Google's AI Overviews, Siri and Perplexity can read exactly what you do, where, and when. Service pages per trade, hours and area in machine-readable form, reviews marked up correctly.</p></div>
-      <div><h3>How is the homepage free?</h3><p>It costs us time, not money, and it's the best way to show you what you'd be paying for. About one in five contractors we send one to hires us. That's the whole business.</p></div>
-      <div><h3>Can I get a free homepage if I'm not in the GTA?</h3><p>Yes — we started in Toronto but the work is the same anywhere in Canada. Ask.</p></div>
-      <div><h3>Who's actually building this?</h3><p>Northsite is run end-to-end by an AI system supervised by a Toronto operator. That's why we can build a homepage before you pay and still turn a full site around in five days.</p></div>
-    </div>
-  </div>
-</section>
-<section id="contact" style="padding-top:0">
-  <div class="wrap">
-    <div class="contact">
-      <div>
-        <div class="eyebrow">Get your free homepage</div>
-        <div class="big" style="margin-top:10px">Send us your company name and your trade. That's it.</div>
-        <p>We'll reply within one business day with a link to your new homepage. No forms, no sales call.</p>
-      </div>
-      <div class="box">
-        <div class="k">Email</div>
-        <a href="mailto:northsite.ca@gmail.com?subject=Free%20homepage%20for%20my%20company&body=Company%3A%0ATrade%3A%0ACity%3A%0ACurrent%20website%20(if%20any)%3A">Email Northsite</a>
-        <div class="k" style="margin-top:16px">Based in</div>
-        <div style="margin-top:4px">Toronto, Ontario · serving the GTA and all of Canada</div>
-      </div>
-    </div>
-  </div>
-</section>
-<div class="wrap">
-  <footer class="site">
-    <span>© 2026 Northsite · Toronto</span>
-    <span>Prices in CAD, HST extra. Care Plan month-to-month.</span>
-  </footer>
+<div class="head rv" style="margin:80px 0 0"><div><span class="kicker">24 industries, day one</span><h2 style="margin-top:14px">Every trade gets its own look.</h2></div><p class="sub" style="margin:0">Colour, copy, photography and video are tuned per industry — then replaced with your logo, your photos and your real Google reviews before launch.</p></div>
+<div class="showcase rv" id="show"></div>
+</div></section>
+
+<section id="pricing"><div class="wrap"><div class="head rv"><div><span class="kicker">Pricing · CAD · flat</span><h2 style="margin-top:14px">Three ways to hire us.</h2></div><p class="sub" style="margin:0">Written down, same for everyone, no hourly surprises. Most businesses pick Launch and pay it off with their first job from the site.</p></div>
+<div class="plans">
+<div class="plan rv"><div class="name">Rescue</div><h3>Fix what's broken</h3><div class="price">$650</div><ul><li>Broken, hacked or painfully slow WordPress site repaired this week</li><li>Speed pass: Core Web Vitals in the green</li><li>Backups, updates, and a plain-English report of what was wrong</li></ul><a class="btn ghost" href="https://buy.stripe.com/14A00l3Rd0xw5ajcrt7Re02">Book a rescue</a></div>
+<div class="plan lead rv" style="transition-delay:.1s"><span class="badge">Most popular</span><div class="name">Launch site</div><h3>A site that gets you found</h3><div class="price">$2,450<small>one-time</small></div><ul><li>5 pages: Home, Services, Service Area, About, Contact</li><li>Built for phones first — where most of your calls start</li><li>AI-answer ready: structured data, service pages, hours, area</li><li>Google Business Profile tuned to match the site</li><li>Click-to-call, quote form, reviews pulled in live</li><li>Live in 5 business days · you own everything</li></ul><a class="btn" href="#try">Start with a free homepage</a></div>
+<div class="plan rv" style="transition-delay:.2s"><div class="name">Growth site</div><h3>Own your service area</h3><div class="price">$4,900<small>one-time</small></div><ul><li>Everything in Launch, plus online booking</li><li>A page for each city you serve (Vaughan, Brampton, Oakville…)</li><li>3 months of monthly service articles the AIs cite</li><li>Reviews widget and before/after gallery</li></ul><a class="btn ghost" href="mailto:northsite.ca@gmail.com?subject=Growth%20site">Talk about Growth</a></div>
 </div>
+<p class="care rv">Every site includes an optional <b>Care Plan</b> at <b>$149/month</b> (Growth: $249): hosting, security, unlimited small edits, and a monthly report showing whether Google and the AIs are naming you. Cancel any month — your site is yours either way.</p>
+</div></section>
+
+<section id="kit" style="padding-top:0"><div class="wrap"><div class="kit rv"><div><span class="kicker">Not ready for a new site? Start here</span><h2 style="margin-top:14px;font-size:clamp(28px,3.6vw,44px)">The AI Visibility Kit for the website you already have.</h2><ul><li>Structured data (JSON-LD) written for your business, ready to paste</li><li>Page titles and descriptions rewritten for your trade and city</li><li>A 10-point Google Business Profile fix list</li><li>A before-and-after AI answer check — who gets named, and why</li></ul><p class="sub" style="font-size:15px;margin-top:16px">Emailed within one business day. Paste it in yourself, or we install it for $149.</p></div>
+<div class="box"><div class="name" style="font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)">AI Visibility Kit</div><div class="p">$199</div><a class="btn" style="margin-top:14px;justify-content:center;display:flex" href="https://buy.stripe.com/eVqfZjdrN4NMbyH3UX7Re06">Get the kit</a><small>CAD + HST · Secure checkout by Stripe</small></div></div></div></section>
+
+<section id="how" style="padding-top:0"><div class="wrap"><div class="head rv"><div><span class="kicker">How it works</span><h2 style="margin-top:14px">Five business days. Here's the schedule.</h2></div><p class="sub" style="margin:0">No discovery calls, no 40-page questionnaires. We start from what's already public about you and move fast.</p></div>
+<div class="steps rv" id="steps">
+<div class="step"><div class="d">Day 0</div><b>Free homepage</b><p>We build your homepage from your public info and send you a link. No call, no deposit.</p></div>
+<div class="step"><div class="d">Day 1</div><b>Deposit &amp; details</b><p>50% deposit. A 15-minute call or a text thread — your services, your area, your photos.</p></div>
+<div class="step"><div class="d">Day 2–3</div><b>Build</b><p>All pages, structured data, Google Business Profile alignment, speed tuning.</p></div>
+<div class="step"><div class="d">Day 4</div><b>Your review</b><p>You go through it on your phone. We change what you want changed.</p></div>
+<div class="step"><div class="d">Day 5</div><b>Live</b><p>On your domain. Balance due at launch. Care Plan starts the following month.</p></div>
+</div>
+<div class="stats"><div class="stat rv"><b><span class="cnt" data-v="5">5</span> days</b><span>from deposit to live site. Not five weeks of "revisions."</span></div><div class="stat rv" style="transition-delay:.1s"><b>$<span class="cnt" data-v="0">0</span></b><span>until you've seen your new homepage with your own eyes.</span></div><div class="stat rv" style="transition-delay:.2s"><b><span class="cnt" data-v="1">1</span> job</b><span>is usually all it takes to pay the whole site off.</span></div></div>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap"><div class="faq"><div class="rv"><span class="kicker">Questions we get</span><h2 style="margin-top:14px">Straight answers.</h2><p class="sub">Anything else — email <a href="mailto:northsite.ca@gmail.com" style="color:var(--teal)">northsite.ca@gmail.com</a>. A person replies, usually within the hour.</p></div>
+<div class="rv">
+<details open><summary>I already have a website. Why change it?</summary><p>Pull up ChatGPT and ask it for your trade in your town. If it doesn't name you, your site isn't doing its job — and neither is your Google listing. Most local sites were built for 2016 Google, not for AI answers.</p></details>
+<details><summary>How is the homepage free?</summary><p>It costs us time, not money, and it's the best sales pitch we have. We build it from public info, send you the link, and you decide. Keep it either way.</p></details>
+<details><summary>What does "AI-answer ready" actually mean?</summary><p>The site is written and structured so ChatGPT, Google's AI Overviews, Siri and Perplexity can read exactly what you do, where, and when: service pages per trade, hours and area in machine-readable form, reviews marked up correctly.</p></details>
+<details><summary>Do I own the site?</summary><p>Yes. Your domain, your content, your files. If you ever leave the Care Plan we hand you everything and help you move it.</p></details>
+<details><summary>Do you work outside the GTA?</summary><p>Ontario-wide for the Kit and for websites. In-person visits are GTA only, but almost nobody needs one.</p></details>
+</div></div></div></section>
+
+<section class="cta-band"><div class="aurora"><i></i><i></i><i></i></div><div class="wrap rv"><span class="kicker" style="justify-content:center">Free, no strings</span><h2 style="margin-top:14px">See your new homepage before you spend a dollar.</h2><div class="btns"><a class="btn white" href="#try">Build it now</a><a class="btn ghost" href="mailto:northsite.ca@gmail.com?subject=Free%20homepage%20for%20my%20company&amp;body=Company%3A%0ATrade%3A%0ACity%3A%0ACurrent%20website%20(if%20any)%3A">Or email us</a></div></div></section>
+
+<footer><div class="wrap"><span><a class="logo" href="#top" style="font-size:18px"><i style="width:22px;height:22px"></i>Northsite</a></span><span>Toronto, Ontario · <a href="mailto:northsite.ca@gmail.com">northsite.ca@gmail.com</a></span><span>© 2026 Northsite · Websites for local service businesses</span></div></footer>
+
+<script>
+const TW=["plumber in Etobicoke","dentist in Mississauga","roofer in Vaughan","electrician in Brampton","hair salon in Markham","physio in Scarborough","landscaper in Oakville","daycare in Toronto"];
+(function(){const el=document.getElementById('tw');let i=0;const rm=matchMedia('(prefers-reduced-motion:reduce)').matches;if(rm)return;async function loop(){while(true){const t=TW[i=(i+1)%TW.length];for(let k=el.textContent.length;k>=0;k--){el.textContent=el.textContent.slice(0,k);await new Promise(r=>setTimeout(r,22));}await new Promise(r=>setTimeout(r,300));for(let k=1;k<=t.length;k++){el.textContent=t.slice(0,k);await new Promise(r=>setTimeout(r,48));}await new Promise(r=>setTimeout(r,2600));}}setTimeout(loop,2200);})();
+const TR=["Plumbers","HVAC","Electricians","Roofers","Landscapers","Renovators","Fence & deck","Paving","Windows & doors","Garage doors","Movers","Cleaners","Mechanics","Pest control","Painters","Salons","Physio & chiro","Dentists","Daycares","Tutors","Caterers","Photographers","Vets","Accountants"];
+document.getElementById('tick').innerHTML=TR.concat(TR).map(t=>`<span>${t}</span>`).join('');
+const nav=document.getElementById('nav');const onS=()=>nav.classList.toggle('solid',scrollY>30);onS();addEventListener('scroll',onS,{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+// chat animation
+const chat=document.getElementById('chat');const co=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;co.unobserve(e.target);[...document.querySelectorAll('#ol li')].forEach((li,i)=>setTimeout(()=>li.classList.add('in'),500+i*500));setTimeout(()=>document.getElementById('miss').classList.add('in'),2200);}),{threshold:.4});co.observe(chat);
+const tb0=document.getElementById('tb0'),tb1=document.getElementById('tb1');const N=[["Competitor A","Competitor B","Competitor C"],["<b class='you'>Your company</b>","Competitor A","Competitor B"]];
+function setMode(m){chat.classList.toggle('fixed',m===1);tb0.classList.toggle('on',m===0);tb1.classList.toggle('on',m===1);N[m].forEach((n,i)=>document.getElementById('n'+(i+1)).innerHTML=n);document.getElementById('miss').classList.add('in');}
+tb0.onclick=()=>setMode(0);tb1.onclick=()=>setMode(1);
+// phone iframes: scale 390px viewport into the screen
+function fitPhones(){document.querySelectorAll('.phone').forEach(p=>{const s=p.querySelector('.screen'),f=p.querySelector('iframe');if(!f)return;const w=s.clientWidth,h=s.clientHeight;const k=w/390;f.style.transform=`scale(${k})`;f.style.height=(h/k)+'px';});}
+addEventListener('resize',fitPhones);fitPhones();setTimeout(fitPhones,300);
+// gentle auto-scroll of the hero demo
+(function(){const f=document.getElementById('ph');if(!f||matchMedia('(prefers-reduced-motion:reduce)').matches)return;let dir=1,y=0;f.addEventListener('load',()=>{setInterval(()=>{try{const d=f.contentWindow.document;const max=d.documentElement.scrollHeight-f.contentWindow.innerHeight;y+=dir*1.2;if(y>max||y<0){dir*=-1;y=Math.max(0,Math.min(max,y));}f.contentWindow.scrollTo(0,y);}catch(e){}},30);});})();
+// builder
+const KEY={plumb:"Plumbing",hvac:"Heating & Cooling",electric:"Electrical",roof:"Roofing",landscap:"Landscaping",renov:"Renovations",fence:"Fences & Decks",paving:"Paving",window:"Windows & Doors",garage:"Garage Doors",move:"Moving",clean:"Cleaning",auto:"Auto Repair",pest:"Pest Control",paint:"Painting",salon:"Hair & Beauty",clinic:"Health Clinic",dental:"Dental",daycare:"Childcare",tutor:"Tutoring",catering:"Catering",photo:"Photography",vet:"Veterinary",account:"Accounting"};
+const fb=document.getElementById('fb'),fo=document.getElementById('fo'),ph2=document.getElementById('ph2');
+fb.onclick=()=>{const n=document.getElementById('fn').value.trim()||"Your Business",t=document.getElementById('ft').value,c=document.getElementById('fc').value.trim()||"Toronto",p=document.getElementById('fp').value.trim()||"4165550100";const u='/m/?'+new URLSearchParams({n,t,c,p}).toString();ph2.src=u;const full=location.origin+u;fo.innerHTML=`Your homepage: <a href="${full}" target="_blank" rel="noopener">${full.replace(/^https?:\/\//,'')}</a><br>Like it? <a href="mailto:northsite.ca@gmail.com?subject=${encodeURIComponent('Finish my site: '+n)}&body=${encodeURIComponent('My preview: '+full+'\n\nBusiness: '+n+'\nCity: '+c+'\nPhone: '+p)}">Email us the link</a> and we take it from there.`;ph2.closest('.demo').scrollIntoView({behavior:'smooth',block:'center'});fitPhones();};
+document.getElementById('bf').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();fb.click();}});
+ph2.src='/m/?n=Your+Business&t=roof&c=Toronto&p=4165550100';
+// showcase
+const SH=[["roof","Griffiths Roofing","Toronto","https://images.unsplash.com/photo-1635424709845-3a85ad5e1f5e"],["dental","Bright Smile Dental","Mississauga","https://images.unsplash.com/photo-1606811971618-4486d14f3f99"],["salon","Studio Nine Hair","Markham","https://images.unsplash.com/photo-1562322140-8baeececf3df"],["hvac","Northline Heating","Vaughan","https://images.unsplash.com/photo-1660330589827-da8ab7dd3c02"],["plumb","Alderwood Plumbing","Etobicoke","https://images.unsplash.com/photo-1676210134188-4c05dd172f89"],["landscap","Greenway Landscapes","Oakville","https://images.unsplash.com/photo-1780838446281-9394772d07a8"],["clinic","Lakeshore Physio","Scarborough","https://images.unsplash.com/photo-1649751361457-01d3a696c7e6"],["move","Maple Movers","Brampton","https://images.unsplash.com/photo-1714647211902-bb711d643a17"]];
+document.getElementById('show').innerHTML=SH.map(([t,n,c,u])=>`<a href="/m/?${new URLSearchParams({n,t,c,p:'4165550100'})}" target="_blank" rel="noopener"><div class="im" style="background-image:url('${u}?w=700&q=65&auto=format&fit=crop')"></div><span class="go">↗</span><div class="cap">${n}<small>${KEY[t]} · ${c}</small></div></a>`).join('');
+// spotlight on plans
+document.querySelectorAll('.plan').forEach(p=>p.addEventListener('pointermove',e=>{const r=p.getBoundingClientRect();p.style.setProperty('--mx',(e.clientX-r.left)+'px');p.style.setProperty('--my',(e.clientY-r.top)+'px');}));
+// counters
+const cio=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;cio.unobserve(e.target);const el=e.target,v=+el.dataset.v,t0=performance.now();const st=t=>{const p=Math.min(1,(t-t0)/1200);el.textContent=Math.round(v*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(st);};requestAnimationFrame(st);}),{threshold:.6});document.querySelectorAll('.cnt').forEach(el=>cio.observe(el));
+</script>
 </body>
 </html>
