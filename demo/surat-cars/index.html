@@ -136,8 +136,8 @@ footer a:hover{color:var(--amb2)}
 @media(max-width:560px){.grid3,.gal,.trust .wrap,.fg,.row2{grid-template-columns:1fr}}
 
 /* ---- motion layer ---- */
-.rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
-.rv.in{opacity:1;transform:none}
+.jsr .rv{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+.jsr .rv.in{opacity:1;transform:none}
 .veh,.pk,.rev{transition:transform .35s cubic-bezier(.22,.61,.36,1),border-color .35s ease,box-shadow .35s ease}
 .veh:hover,.pk:hover,.rev:hover{transform:translateY(-6px);border-color:#39434F;box-shadow:0 18px 40px -22px rgba(0,0,0,.9)}
 .veh .ph{transition:transform .6s cubic-bezier(.22,.61,.36,1)}
@@ -370,6 +370,8 @@ document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.querySelec
 <script>
 (function(){
  var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var root=document.documentElement;
+ if(!rm) root.classList.add('jsr');
  /* hero video: only start once it can play, so the poster never flashes black */
  var hv=document.querySelector('.hero video.bgv');
  if(hv && !rm && innerWidth>760){
@@ -379,7 +381,7 @@ document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.querySelec
  /* lazy videos further down the page */
  var lz=[].slice.call(document.querySelectorAll('video[data-lazyvid]'));
  /* reveal on scroll */
- var targets=[].slice.call(document.querySelectorAll('.sec-head,.veh,.pk,.rev,.tbl,.ba,.vband,.faq-i,.mapbox,.card,.trust div'));
+ var targets=[].slice.call(document.querySelectorAll('.sec-head,.veh,.pk,.rev,.tbl,.ba,.vband,.faq-i,.mapbox,.trust div'));
  if(!rm) targets.forEach(function(t,i){t.classList.add('rv');t.style.transitionDelay=(Math.min(i%3,2)*90)+'ms'});
  var io=new IntersectionObserver(function(es){
    es.forEach(function(e){
@@ -432,6 +434,12 @@ document.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{document.querySelec
      });
    },{threshold:.4}).observe(ba);
  }
+ setTimeout(function(){
+   if(!document.querySelector('.rv.in')){ root.classList.remove('jsr'); return; }
+   var vh=innerHeight;
+   targets.forEach(function(t){ var r=t.getBoundingClientRect(); if(r.top<vh*0.95&&r.bottom>0) t.classList.add('in') });
+ },2600);
+ addEventListener('beforeprint',function(){root.classList.remove('jsr')});
  /* smooth anchor scrolling */
  document.querySelectorAll('a[href^="#"]').forEach(function(a){
    a.addEventListener('click',function(ev){
